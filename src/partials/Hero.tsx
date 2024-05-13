@@ -1,40 +1,41 @@
-import {
-  GradientText,
-  HeroAvatar,
-  HeroSocial,
-  Section,
-} from 'astro-boilerplate-components';
+import { HeroAvatar, Section } from 'astro-boilerplate-components';
 
 const Hero = () => (
   <Section>
     <HeroAvatar
       title={
         <>
-          Hi there, I'm <GradientText>Rys Renders</GradientText> 👋
+          <div className="bg-gradient-to-br from-sky-500 to-cyan-400 bg-clip-text text-transparent">
+            Become the Experience
+          </div>
         </>
       }
       description={
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus{' '}
+          Emerging from New Jersey with a foundation in software engineering
+          artist Ryan Basile dives deeply into the realms of digital creation,
+          projection mapping, and live performances. Infusing his passion for
+          technology with a creative edge, he orchestrates immersive
+          expereineces that captivate audiences. Collaborating seamlessly within
+          teams, he harnesses a keen eye for detail and problem-solving skills
+          that push the boundaries of innovation. He is dedicated to creating
+          unforgettable moments in the audiovisuals landscape.
+          {/* {' '}
           <a className="text-cyan-400 hover:underline" href="/">
-            malesuada
-          </a>{' '}
-          nisi tellus, non imperdiet nisi tempor at. Lorem ipsum dolor sit amet,{' '}
-          <a className="text-cyan-400 hover:underline" href="/">
-            consectetur
-          </a>{' '}
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+            Link example where text is underlined
+          </a>{' '} */}
         </>
       }
       avatar={
         <img
           className="h-80 w-64"
-          src="/assets/images/avatar.svg"
+          src="/src/images/rys_renders.png"
           alt="Avatar image"
           loading="lazy"
         />
       }
-      socialButtons={
+      socialButtons={undefined}
+      /* socialButtons={
         <>
           <a href="/">
             <HeroSocial
@@ -61,7 +62,7 @@ const Hero = () => (
             />
           </a>
         </>
-      }
+      } */
     />
   </Section>
 );

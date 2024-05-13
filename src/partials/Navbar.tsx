@@ -11,7 +11,8 @@ const Navbar = () => (
     <NavbarTwoColumns>
       <a href="/">
         <Logo
-          icon={
+          icon={undefined}
+          /* icon={
             <svg
               className="mr-1 h-10 w-10 stroke-cyan-600"
               xmlns="http://www.w3.org/2000/svg"
@@ -27,15 +28,15 @@ const Navbar = () => (
               <rect x="15" y="4" width="6" height="16" rx="1"></rect>
               <path d="M4 20h14"></path>
             </svg>
-          }
-          name="Ixartz's Blog"
+          } */
+          name="Rys Renders"
         />
       </a>
 
       <NavMenu>
-        <NavMenuItem href="/posts/">Blogs</NavMenuItem>
-        <NavMenuItem href="/">GitHub</NavMenuItem>
-        <NavMenuItem href="/">Twitter</NavMenuItem>
+        <NavMenuItem href="/">Home</NavMenuItem>
+        <NavMenuItem href="/posts/">Live Shows</NavMenuItem>
+        <NavMenuItem href="/">Instagram</NavMenuItem>
       </NavMenu>
     </NavbarTwoColumns>
   </Section>
