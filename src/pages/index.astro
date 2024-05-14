@@ -22,7 +22,7 @@ const { description } = AppConfig;
 <Base head={{ title, description }}>
   <Hero />
   {/*<Sponsors />*/}
-  <InstagramFeed />
+  <InstagramFeed client:load />
   <RecentPosts postList={lastThreePosts} />
   <ProjectList />
   <CTA />
